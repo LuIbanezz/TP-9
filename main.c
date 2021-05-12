@@ -37,6 +37,8 @@ void dec2bin (unsigned int n)
     {
         dec2bin(n/2);//imprime todos los bits menos el ultimo
         printf ("%d", n%2);
+        
+        
     }
   
 }
