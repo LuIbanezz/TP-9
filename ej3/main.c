@@ -41,7 +41,6 @@ int suma_digitos (int n1)
         return ((n1%10) + suma_digitos(n1/10));//caso recursivo 
     }
 
- 
 }
 /* 
  a. El objetivo de la funcion es sumar los digitos del numero
