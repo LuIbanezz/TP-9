@@ -35,6 +35,12 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>DEBUG</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </cTool>
       </compileType>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>

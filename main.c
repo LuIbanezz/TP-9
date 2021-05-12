@@ -30,14 +30,19 @@ void dec2bin (unsigned int n)
 {
     if (n<=1)//caso base en el que estas en el ultimo numero de la izquierda
     {
-        printf ("%d", n);
+        printf ("%u", n);
+#ifdef DEBUG
+        fflush( stdout ) ;
+#endif
     }
     
     else
     {
         dec2bin(n/2);//imprime todos los bits menos el ultimo
-        printf ("%d", n%2);
-        
+        printf ("%u", n%2);
+#ifdef DEBUG 
+        fflush( stdout ) ;
+#endif
     }
   
 }
