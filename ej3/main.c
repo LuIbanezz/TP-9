@@ -21,12 +21,27 @@ int suma_digitos (int);
 int main(int argc, char** argv) {
     int n = 54;
     int resultado = suma_digitos (n);
+    printf ("%d", resultado);
     return (EXIT_SUCCESS);
 }
 
 int suma_digitos (int n1)
-{
-    return ((n1%10) + suma_digitos(n1/10));//caso recursivo
+{   
+    if (n1<0)
+    {
+        n1=(-1)*n1;
+    }
+        
+    if (n1<10)
+    {
+        return n1;
+    }
+    else
+    {
+        return ((n1%10) + suma_digitos(n1/10));//caso recursivo 
+    }
+
+ 
 }
 /* 
  a. El objetivo de la funcion es sumar los digitos del numero
